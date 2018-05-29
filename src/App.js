@@ -18,13 +18,6 @@ class App extends Component {
 
   render() {
 
-    // const items = [
-    //   {},
-    //   {},
-    //   {},
-    //   {}
-    // ];
-
     return (
       <div>
         <Navigation />
@@ -42,8 +35,7 @@ class App extends Component {
               </div>
             </div>
             <div className="shape row">
-              <div className="shapeL col-md-6"></div>
-              <div className="shapeR col-md-6"></div>
+              <div className="shapeArrow"></div>
             </div>
           </div>
           <div className="row page-two">
@@ -60,7 +52,7 @@ class App extends Component {
               </div>
             </div>
             <div className="shape row">
-              <div className="shapeC col-md-12"></div>
+              <div className="shapeC"></div>
             </div>
           </div>
           <div className="row page-three">
@@ -76,28 +68,27 @@ class App extends Component {
                 <button className="btn btn-ubscribe">Subscribe</button>
               </div>
             </div>
-            <div className="shape row">
-            </div>
           </div>
-        </div>
-        <div className="row page-four">
-          <div className="m-auto col-md-10">
-            <h1 className="m-t-89 text-center text-purple">
-              Level up your real estate investment
-            </h1>
-            <p className="m-t-45 text-center text-purple">
-              Meridio enables you to create and invest in shares of individual properties on blockchain
-            </p>
-            <div className="text-center btn-wrap">
-              <div className="input-group">
-                <input type="text" className="inputMail form-control" placeholder=""/>
-                <button className="btn btn-ubscribe">Subscribe</button>
+          <div className="row page-four">
+            <div className="m-auto col-md-10">
+              <h1 className="m-t-89 text-center text-purple">
+                Level up your real estate investment
+              </h1>
+              <p className="m-t-45 text-center text-purple">
+                Meridio enables you to create and invest in shares of individual properties on blockchain
+              </p>
+              <div className="text-center btn-wrap">
+                <div className="input-group">
+                  <input type="text" className="inputMail form-control" placeholder=""/>
+                  <button className="btn btn-ubscribe">Subscribe</button>
+                </div>
               </div>
             </div>
           </div>
+          <div className="row footer">
+          </div>
         </div>
-        <div className="row footer">
-        </div>
+
       </div>
 
     );

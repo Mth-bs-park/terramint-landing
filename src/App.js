@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
-// import $ from 'jquery';
+import $ from 'jquery';
 
 class App extends Component {
 
@@ -14,6 +13,8 @@ class App extends Component {
       isMobile,
       browserHeight: isMobile ? browserHeight : 0
     };
+    // text 객체 추가하기..
+    this.onClick = this.onClick.bind(this);
   }
 
   render() {
@@ -31,7 +32,7 @@ class App extends Component {
                 Meridio enables you to create and invest in shares of individual properties on blockchain
               </p>
               <div className="text-center btn-wrap">
-                <button className="btn btn-ubscribe">Subscribe</button>
+                <button className="btn btn-ubscribe" onClick={this.onClick}>Subscribe</button>
               </div>
             </div>
             <div className="shape row">
@@ -48,7 +49,7 @@ class App extends Component {
                 <li>Tell your friends</li>
               </ul>
               <div className="btn-wrap">
-                <button className="btn btn-ubscribe">Subscribe</button>
+                <button className="btn btn-ubscribe" onClick={this.onClick}>Subscribe</button>
               </div>
             </div>
             <div className="shape row">
@@ -65,7 +66,7 @@ class App extends Component {
                 <li>Tell your friends</li>
               </ul>
               <div className="btn-wrap">
-                <button className="btn btn-ubscribe">Subscribe</button>
+                <button className="btn btn-ubscribe" onClick={this.onClick}>Subscribe</button>
               </div>
             </div>
           </div>
@@ -80,7 +81,7 @@ class App extends Component {
               <div className="text-center btn-wrap">
                 <div className="input-group">
                   <input type="text" className="inputMail form-control" placeholder=""/>
-                  <button className="btn btn-ubscribe">Subscribe</button>
+                  <button className="btn btn-ubscribe" data-withinput="true" onClick={this.onClick}>Subscribe</button>
                 </div>
               </div>
             </div>
@@ -107,6 +108,23 @@ class App extends Component {
       isMobile = true;
     }
     return isMobile;
+  }
+
+  onClick(e) {
+    const nativeEvent = e.nativeEvent;
+    const target = nativeEvent.target;
+    const $target = $(target);
+    const withInput = Boolean($target.attr('data-withinput'));
+
+    console.log(withInput);
+    if (withInput) {
+      const $input = $target.prev();
+      const email = $input.val();
+      console.log('input value:', email);
+    }
+    else {
+      console.log('open modal');
+    }
   }
 }
 
@@ -139,19 +157,5 @@ class Navigation extends Component {
     );
   }
 }
-//
-// class Section extends Component {
-//
-//   constructor(props) {
-//     super(props);
-//   }
-//
-//   render() {
-//     return(
-//       <div style={{height: `${this.props.height}px`}}>
-//       </div>
-//     );
-//   }
-// }
 
 export default App;

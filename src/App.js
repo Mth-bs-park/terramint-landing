@@ -120,11 +120,22 @@ class App extends Component {
     if (withInput) {
       const $input = $target.prev();
       const email = $input.val();
+      const isEmail = this._validateEmail(email);
+
+      if (!isEmail) {
+        console.log('none email form');
+        return;
+      }
       console.log('input value:', email);
     }
     else {
       console.log('open modal');
     }
+  }
+
+  _validateEmail(email) {
+    const regExp = new RegExp('/^\S+@\S+\.\S+$/');
+    return regExp.test(email);
   }
 }
 

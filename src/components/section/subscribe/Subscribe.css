@@ -1,0 +1,46 @@
+.subscribe-wrap {
+  background: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.subscribe-wrap .text-wrap {
+  color: #311b92
+}
+
+.subscribe-wrap .text-wrap .title {
+  font-size: 30px;
+  font-weight: 400px;
+  padding: 10px;
+}
+
+.subscribe-wrap .text-wrap .desc {
+  font-size: 18px;
+  font-weight: 300px;
+  padding: 10px;
+}
+
+.subscribe-wrap .input-group .form-control {
+  flex: none;
+}
+
+.input-group .form-control.inputMail {
+  width: 300px !important;
+  height: 45px;
+  border-radius: 5px !important;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.form-wrap .purple {
+  color: #fff;
+  background: #4527a0;
+}
+
+.form-wrap .btn {
+  margin: 15px;
+}
+
+.form-wrap .m-t-20 {
+  margin-top: 20px !important;
+}

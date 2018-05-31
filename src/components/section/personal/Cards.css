@@ -1,0 +1,29 @@
+.cards-wrap {
+  background: #ede7f6;
+  padding: 40px 0;
+}
+
+.cards-wrap .title-wrap .text{
+  text-align: center;
+  color: #3a28b4;
+  font-size: 24px;
+}
+
+.cards-wrap .btn-wrap {
+  text-align: center;
+}
+
+.btn.clear.purple{
+  background: transparent;
+  color: #472793;
+  border: 1px solid #472793;
+}
+
+.cards-wrap .card-list {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-wrap .btn-wrap {
+  margin: 50px 0 40px 0;
+}

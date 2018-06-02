@@ -18,3 +18,24 @@ nav .brand-text {
   background: #4527a0;
   color: #fff;
 }
+
+nav > .dropdown > a {
+  width: 120px;
+}
+
+nav > .dropdown > a:hover {
+  color: #fff;
+}
+
+nav > .dropdown > .dropdown-menu {
+  width: 120px;
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255,255,255,.25) !important;
+}
+
+.btn-clear {
+  background: transparent;
+  color: #fff;
+}

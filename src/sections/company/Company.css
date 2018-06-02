@@ -1,46 +1,46 @@
-.company-section-wrap {
+.company-wrap {
   background: #f8f8f8;
   color: #3a28b4;
   padding: 90px 0 50px 45px;
 }
 
-.company-section-wrap .title-wrap .title {
+.company-wrap .title-wrap .title {
   font-size: 20px;
 }
 
-.company-section-wrap .item-list-wrap {
+.company-wrap .content-wrap {
   margin: 50px 0 25px 0;
 }
 
-.company-section-wrap .item-list-wrap .item-list {
+.company-wrap .content-wrap .item-list {
   list-style: none;
   padding: 0;
 }
 
-.company-section-wrap .item-list-wrap .item::before {
+.company-wrap .content-wrap .item::before {
   content: "•";
   color: #979797;
   margin-right: 10px
 }
 
-.company-section-wrap .item-list-wrap .title {
+.company-wrap .content-wrap .title {
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
 }
 
-.company-section-wrap .item-list-wrap .desc {
+.company-wrap .content-wrap .content {
   font-size: 16px;
   padding-left: 15px;
   margin: 5px 0 20px 0;
   display: inline-block;
 }
 
-.company-section-wrap .btn-wrap {
+.company-wrap .btn-wrap {
   margin-top: 25px;
 }
 
-.company-section-wrap .btn-wrap .btn.purple {
+.company-wrap .btn-wrap .btn.purple {
   color: #fff;
   background: #4527a0;
 }

@@ -1,15 +1,15 @@
-.cards-wrap {
+.personal-wrap {
   background: #ede7f6;
   padding: 40px 0;
 }
 
-.cards-wrap .title-wrap .text{
+.personal-wrap .title-wrap .title{
   text-align: center;
   color: #3a28b4;
   font-size: 24px;
 }
 
-.cards-wrap .btn-wrap {
+.personal-wrap .btn-wrap {
   text-align: center;
 }
 
@@ -19,11 +19,11 @@
   border: 1px solid #472793;
 }
 
-.cards-wrap .card-list {
+.personal-wrap .card-list {
   display: flex;
   justify-content: center;
 }
 
-.cards-wrap .btn-wrap {
+.personal-wrap .btn-wrap {
   margin: 50px 0 40px 0;
 }

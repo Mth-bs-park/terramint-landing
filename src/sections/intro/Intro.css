@@ -1,29 +1,31 @@
-.banner-wrap {
+.intro-wrap {
   background-image: linear-gradient(to bottom, #45279f, #9071c7);
   color: #fff;
   padding: 90px 0 150px 0;
 }
-.banner-wrap .top-wrap{
+
+.intro-wrap .title-wrap{
   display: flex;
   flex-direction: column;
 }
-.banner-wrap .brand-wrap {
+
+.intro-wrap .brand-wrap {
   margin: 0 auto 30px auto;
 }
-.banner-wrap .brand-wrap * {
+.intro-wrap .brand-wrap * {
   display: inline-block;
 }
-.banner-wrap .brand-wrap .brand-logo {
+.intro-wrap .brand-wrap .brand-logo {
   width: 50px;
 }
 
-.banner-wrap .brand-wrap .brand-text {
+.intro-wrap .brand-wrap .brand-text {
   font-size: 48px;
   font-weight: 300;
   vertical-align: middle;
 }
 
-.top-wrap .text {
+.title-wrap .title {
   text-align: center;
   width: 200px;
   margin: auto;
@@ -31,25 +33,20 @@
   font-weight: 400;
 }
 
-.banner-wrap .bottom-wrap {
+.intro-wrap .content-wrap {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.bottom-wrap .desc-title{
-  font-size: 32px;
-  padding: 10px;
-}
-
-.bottom-wrap .text {
+.content-wrap .content {
   font-size: 18px;
   font-weight: 200;
   padding: 10px;
 }
 
-.bottom-wrap .btn-wrap {
+.content-wrap .btn-wrap {
   margin-top: 20px;
 }
 .btn {

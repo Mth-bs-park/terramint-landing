@@ -17,16 +17,16 @@
   height: 64px;
 }
 
-.card-wrap .text-wrap {
+.card-wrap .content-wrap {
   color: #3a28b4;
 }
 
-.card-wrap .text-wrap .title{
+.card-wrap .content-wrap .title{
   text-align: center;
   font-size: 18px;
 }
 
-.card-wrap .text-wrap .desc {
+.card-wrap .content-wrap .content {
   font-size: 16px;
   font-weight: 200;
 

@@ -6,25 +6,27 @@ class Company extends Component {
 
   render() {
 
-    const companyItems = this.props.items;
+    const props = this.props;
+    const companyItems = props.items;
     const {title, items, btnText} = companyItems;
+    const onClick = props.click;
 
     return (
-      <div className="company-section-wrap m-auto">
+      <div className="company-wrap m-auto">
         <div className="title-wrap">
           <h2 className="title">{title}</h2>
         </div>
-        <div className="item-list-wrap">
+        <div className="content-wrap">
           <ul className="item-list">
           {
-            items.map(v => {
-              let {title:_title, desc:_desc} = v;
-              const __html = _desc.replace(/\n/g, '<br/>');
+            items.map((v, i) => {
+              let {title:_title, content} = v;
+              const __html = content.replace(/\n/g, '<br/>');
 
               return (
-                <li className="item">
+                <li className="item" key={i}>
                   <span className="title">{_title}</span><br/>
-                  <span className="desc" dangerouslySetInnerHTML={{__html}}></span>
+                  <span className="content" dangerouslySetInnerHTML={{__html}}></span>
                 </li>
               );
             })
@@ -32,7 +34,7 @@ class Company extends Component {
           </ul>
         </div>
         <div className="btn-wrap">
-          <button className="btn purple">{btnText}</button>
+          <button className="btn purple" onClick={onClick}>{btnText}</button>
         </div>
       </div>
     )

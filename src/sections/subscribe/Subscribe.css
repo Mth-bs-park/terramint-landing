@@ -4,17 +4,21 @@
   text-align: center;
 }
 
-.subscribe-wrap .text-wrap {
-  color: #311b92
+.subscribe-wrap .title-wrap {
+  color: #311b92;
 }
 
-.subscribe-wrap .text-wrap .title {
+.subscribe-wrap .title-wrap .title {
   font-size: 30px;
   font-weight: 400px;
   padding: 10px;
 }
 
-.subscribe-wrap .text-wrap .desc {
+.subscribe-wrap .content-wrap {
+  color: #311b92;
+}
+
+.subscribe-wrap .content-wrap .content {
   font-size: 18px;
   font-weight: 300px;
   padding: 10px;

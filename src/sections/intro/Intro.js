@@ -27,7 +27,7 @@ class Intro extends Component {
         </div>
         <div className="content-wrap row">
           <h2 className="title m-auto">{_title}</h2>
-          <span className="content m-auto" dangerouslySetInnerHTML={{__html}}></span>
+          <span className="content" dangerouslySetInnerHTML={{__html}}></span>
           <div className='btn-wrap'>
             <button className="btn clear" onClick={onClick}>{btnText}</button>
           </div>

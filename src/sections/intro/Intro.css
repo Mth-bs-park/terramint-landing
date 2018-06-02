@@ -40,10 +40,11 @@
   text-align: center;
 }
 
-.content-wrap .content {
+.intro-wrap .content-wrap .content {
   font-size: 18px;
   font-weight: 200;
   padding: 10px;
+  margin: 10px 40px 0 40px;
 }
 
 .content-wrap .btn-wrap {

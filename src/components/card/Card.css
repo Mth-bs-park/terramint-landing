@@ -5,7 +5,7 @@
   width: 20%;
   height: 350px;
   margin: 15px;
-  min-width: 200px;
+  min-width: 250px;
 }
 .card-wrap .card-img-wrap {
   text-align: center;
@@ -29,6 +29,5 @@
 .card-wrap .content-wrap .content {
   font-size: 16px;
   font-weight: 200;
-
   padding: 20px;
 }

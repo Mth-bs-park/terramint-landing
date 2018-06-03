@@ -28,26 +28,25 @@ class Navigation extends Component {
           }
           </div>
         </div>
-
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="navbar-collapse collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto navbar-right text-center">
-            <li className="nav-item">
-              <a className="nav-link" href="#blog">Blog</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contract">Contract</a>
-            </li>
-          </ul>
-        </div>
       </nav>
     );
   }
-
 }
+/*
+<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span className="navbar-toggler-icon"></span>
+</button>
+<div className="navbar-collapse collapse" id="navbarSupportedContent">
+  <ul className="navbar-nav ml-auto navbar-right text-center">
+    <li className="nav-item">
+      <a className="nav-link" href="#personal">personal</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link" href="#contract">Contract</a>
+    </li>
+  </ul>
+</div>
+*/
 
 export default Navigation;

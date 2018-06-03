@@ -13,7 +13,7 @@ class Personal extends Component {
     const onClick = props.click;
 
     return (
-      <div className='personal-wrap'>
+      <div className='personal-wrap' id="personal">
         <div className='title-wrap'>
           <h3 className='title'>{title}</h3>
         </div>

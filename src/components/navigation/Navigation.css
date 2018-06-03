@@ -4,15 +4,13 @@ nav {
 }
 
 nav .brand-img {
-  width: 25px;
-  height: 20px;
-  margin: 10px 15px 10px 0;
+  width: 150px;
 }
 
-nav .brand-text {
-  line-height: 40px;
-  vertical-align: middle;
+.navbar.bg-purple .navbar-brand {
+  margin: 0;
 }
+
 
 .bg-purple {
   background: #4527a0;

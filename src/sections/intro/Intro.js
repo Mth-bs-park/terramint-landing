@@ -16,8 +16,7 @@ class Intro extends Component {
       <div className='intro-wrap m-auto text-center'>
         <div className='title-wrap row'>
           <div className='brand-wrap col-md-10 m-auto'>
-            <img className ='brand-logo' src='assets/img/icon.png' alt="logo"/>
-            <h1 className ='brand-text'>TerraMint</h1>
+            <img className ='brand-logo' src='assets/img/logo.png' alt="logo"/>
           </div>
           <div className="col-md-10 m-auto">
             <span className="title">
@@ -36,5 +35,4 @@ class Intro extends Component {
     )
   }
 }
-
 export default Intro;

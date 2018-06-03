@@ -12,18 +12,12 @@
 .intro-wrap .brand-wrap {
   margin: 0 auto 30px auto;
 }
-.intro-wrap .brand-wrap * {
-  display: inline-block;
-}
+
 .intro-wrap .brand-wrap .brand-logo {
-  width: 50px;
+  width: 280px;
+  margin: 9px 15px;
 }
 
-.intro-wrap .brand-wrap .brand-text {
-  font-size: 48px;
-  font-weight: 300;
-  vertical-align: middle;
-}
 
 .title-wrap .title {
   text-align: center;

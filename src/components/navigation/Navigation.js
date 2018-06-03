@@ -11,8 +11,7 @@ class Navigation extends Component {
     return (
       <nav className="navbar navbar-expand-md navbar-dark bg-purple fixed-top">
         <a className="navbar-brand" href="/">
-          <img className="brand-img" src='./assets/img/icon.png' alt="logo"/>
-          <span className="brand-text">Terrario</span>
+          <img className="brand-img" src='./assets/img/logo.png' alt="logo"/>
         </a>
 
         <div className="dropdown">

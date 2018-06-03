@@ -81,22 +81,22 @@ class App extends Component {
          title: '개인투자자',
          items: [
            {
-             img: '/assets/img/cardIcon1.png',
+             img: '/assets/img/building.png',
              title: '억! 소리나는 빌딩',
              content: '부동산 투자의 진입장벽을 낮춰 소액투자자에게 안정적인 수익의 기회를 열어줍니다.'
            },
            {
-             img: '/assets/img/cardIcon2.png',
+             img: '/assets/img/trading.png',
              title: '내 돈은 내 맘대로!',
              content: '손쉽게 현금화 할 수 없었던 부동산 자산. 복잡한 절차와 비용없이 주식처럼 거래해보세요. 경제적 상황에 알맞게 유동성있는 자금관리가 가능합니다.'
            },
            {
-             img: '/assets/img/cardIcon1.png',
+             img: '/assets/img/search.png',
              title: '투명한 정보',
              content: '블록체인에서 관리되는 투명한 정보를 활용해 보다 정확하고 현명한 부동산투자를 할 수 있습니다.'
            },
            {
-             img: '/assets/img/cardIcon2.png',
+             img: '/assets/img/guard.png',
              title: '안정적인 수익률',
              content: '실물자산의 안정성과 평균 6%의 부동산 수익률을 누릴 수 습니다.'
            }

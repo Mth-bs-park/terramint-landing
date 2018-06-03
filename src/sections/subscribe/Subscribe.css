@@ -10,8 +10,9 @@
 
 .subscribe-wrap .title-wrap .title {
   font-size: 30px;
-  font-weight: 400px;
+  font-weight: 400;
   padding: 10px;
+  width: 50%;
 }
 
 .subscribe-wrap .content-wrap {

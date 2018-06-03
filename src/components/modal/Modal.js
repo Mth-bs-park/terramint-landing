@@ -13,16 +13,21 @@ class Modal extends Component {
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
               <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div className="modal-body">
-              <input type="text" className="inputMail form-control" placeholder={placeholder} id="inputEmail_modal"/>
+              <label className="input">
+                <span className="label">Email</span>
+                <input type="text" className="inputMail form-control" placeholder={placeholder} id="inputEmail_modal"/>
+              </label>
+              
             </div>
             <div className="modal-footer">
-              <button className="btn purple" onClick={onConfirm} data-target="#inputEmail_modal">{btnText}</button>
+              <div className="btn-wrap">
+                <button className="btn purple" onClick={onConfirm} data-target="#inputEmail_modal">{btnText}</button>
+              </div>
             </div>
           </div>
         </div>

@@ -5,6 +5,8 @@
 }
 
 .company-wrap .title-wrap .title {
+  width: 100%;
+  text-align: left;
   font-size: 20px;
 }
 

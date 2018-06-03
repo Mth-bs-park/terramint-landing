@@ -1,9 +1,15 @@
 .modal {
-  top: calc(50% - 200px) !important;
+  top: calc(50% - 210px) !important;
 }
 
 .modal-header {
-  padding: 0.3rem !important;
+  margin: 0 15px !important;
+  border-bottom: 1px solid #311b92 !important;
+}
+
+.modal-header .title{
+  font-size: 20px;
+  color: #311b92;
 }
 
 .purple {
@@ -11,13 +17,26 @@
   background: #4527a0;
 }
 
-
-.modal-body label.input {
-  width: 100%;
+.modal-body .content {
+  font-size: 14px;
+  color: #311b92;
+  padding: 10px 0px;
 }
 
-.modal-body label.input .label {
-  color: #BDBDBD;
-  margin-bottom: 5px;
-  display: inline-block;
+.modal-body .row:first-child {
+  padding: 0 0 10px 0;
+}
+
+.modal-body .row {
+  padding: 10px 0;
+}
+
+.modal-body .btn.clear{
+  border: 1px solid #311b92;
+  color: #311b92;
+}
+
+.modal-footer {
+  border-top: none !important;
+  justify-content: center !important;
 }

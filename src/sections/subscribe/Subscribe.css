@@ -24,7 +24,10 @@
   font-weight: 300px;
   padding: 10px;
 }
-
+.subscribe-wrap .btn-wrap {
+  margin-top: 30px !important;
+}
+/*
 .subscribe-wrap .input-group .form-control {
   flex: none;
 }
@@ -48,4 +51,4 @@
 
 .form-wrap .m-t-20 {
   margin-top: 20px !important;
-}
+} */

@@ -36,6 +36,7 @@ class App extends Component {
     this.items = this.state.items;
 
     this.changeLanguage = this.changeLanguage.bind(this);
+    this.changeMember = this.changeMember.bind(this);
     this.openModal = this.openModal.bind(this);
     this.onConfirm = this.onConfirm.bind(this);
   }
@@ -54,12 +55,14 @@ class App extends Component {
           <Intro items={items.intro} click={this.openModal}/>
           <Personal items={items.personal} click={this.openModal}/>
           <Company items={items.company} click={this.openModal}/>
-          <Subscribe items={items.subscribe} click={this.onConfirm}/>
+          <Subscribe items={items.subscribe} click={this.openModal}/>
         </div>
         <div>
           <Modal id={modalId} onConfirm={this.onConfirm}
                 btnText={items.subscribe.btnText}
-                placeholder={items.subscribe.placeholder}/>
+                items={items.subscribe.dropdown}
+                changeMember={this.changeMember}
+                placeholders={items.subscribe.placeholders}/>
         </div>
       </div>
     );
@@ -104,35 +107,44 @@ class App extends Component {
          btnText: '더 알아보기'
        },
        company: {
-         title: '자산관리 회사:',
+         title: '자산관리 회사',
          items: [
            {
-             title: '새로운 자본',
-             content: '다양하고 많은 투자자로부터 자본을 모아'
+             title: '손쉬운 자금 조달',
+             content: `크라우드펀딩을 통해 손쉽게 자금을
+             조달할 수 있습니다.`
            },
            {
              title: '투명한 자금 관리',
-             content: `보고서를 위한 보고서가 아닌 배당금의 분배, 건물당 수익률이
-             별도의 노력없이 자동으로 처리되고 기록됩니다.`
+             content: `배당금의 분배, 건물당 수익률이
+             별도의 노력없이 투명하게 기록됩니다.`
            },
            {
-             title: '억! 소리나는 빌딩',
-             content: `실시간으로 일어나는 부동산 거래정보로 부터 보다 정확하고
-             가치있는 부동산의 감정평가를 할 수 있습니다.`
+             title: '실시간 가치평가',
+             content: `실시간 부동산 거래정보로부터 보다 정확한
+             부동산의 가치를 파악 할 수 있습니다.`
            },
            {
              title: '자동 결제',
-             content: `지분에 알맞게 약속된 시간에 정확하고 빠르게 자동으로
+             content: `약속된 시간에 배당이 신속하고 정확하게
              처리됩니다.`
            }
          ],
          btnText: '더 알아보기'
        },
        subscribe: {
-         title: '테라민트의 한걸음 한걸음을 지켜봐주세요.',
+         title: '부동산 투자의 변화를 경험하세요.',
          content: `테라민트는 대한민국은 물론 동아시아를 발판으로, 세계로 나아가는 것을 목표로 하고 있습니다.
          이메일로 뉴스레터를 받아보세요.`,
-         placeholder: '이메일을 입력해주세요.',
+         dropdown: {
+          selected: 0,
+          items: ['개인투자자', '자산관리사']
+         },
+         placeholders: {
+           firstName: '이름',
+           lastName: '성',
+           email: '이메일을 입력해주세요.'
+         },
          btnText: '뉴스 받아보기'
        }
      },
@@ -173,7 +185,7 @@ class App extends Component {
          btnText: '더 알아보기'
        },
        company: {
-         title: '자산관리 회사:',
+         title: '자산관리 회사',
          items: [
            {
              title: '새로운 자본',
@@ -201,7 +213,15 @@ class App extends Component {
          title: '테라민트의 한걸음 한걸음을 지켜봐주세요.',
          content: `테라민트는 대한민국은 물론 동아시아를 발판으로, 세계로 나아가는 것을 목표로 하고 있습니다.
          이메일로 뉴스레터를 받아보세요.`,
-         placeholder: '이메일을 입력해주세요.',
+         dropdown: {
+          selected: 0,
+          items: ['개인투자자', '자산관리사']
+         },
+         placeholders: {
+           firstName: '이름',
+           lastName: '성',
+           email: '이메일을 입력해주세요.'
+         },
          btnText: '뉴스 받아보기'
        }
      }
@@ -219,6 +239,17 @@ class App extends Component {
       items: this.texts[value],
       selectedLanguage: value
     });
+  }
+
+  changeMember(e) {
+    const target = e.nativeEvent.target;
+    const $target = $(target);
+    const value = $target.attr('data-value');
+    console.log('kkkk');
+
+    this.setState({
+
+    })
   }
 
   openModal() {

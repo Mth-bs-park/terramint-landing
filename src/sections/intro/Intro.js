@@ -13,22 +13,24 @@ class Intro extends Component {
     const __html = _content.replace('\n', '<br/>');
 
     return (
-      <div className='intro-wrap m-auto text-center'>
-        <div className='title-wrap row'>
-          <div className='brand-wrap col-md-10 m-auto'>
-            <img className ='brand-logo' src='assets/img/logo.png' alt="logo"/>
+      <div className='intro-wrap'>
+        <div className="intro m-auto text-center">
+          <div className='title-wrap row'>
+            <div className='brand-wrap col-md-10 m-auto'>
+              <img className ='brand-logo' src='assets/img/logo.png' alt="logo"/>
+            </div>
+            <div className="col-md-10 m-auto">
+              <span className="title">
+                {title}
+              </span>
+            </div>
           </div>
-          <div className="col-md-10 m-auto">
-            <span className="title">
-              {title}
-            </span>
-          </div>
-        </div>
-        <div className="content-wrap row">
-          <h2 className="title m-auto">{_title}</h2>
-          <span className="content" dangerouslySetInnerHTML={{__html}}></span>
-          <div className='btn-wrap'>
-            <button className="btn clear" onClick={onClick}>{btnText}</button>
+          <div className="content-wrap row">
+            <h2 className="title m-auto">{_title}</h2>
+            <span className="content" dangerouslySetInnerHTML={{__html}}></span>
+            <div className='btn-wrap'>
+              <button className="btn clear" onClick={onClick}>{btnText}</button>
+            </div>
           </div>
         </div>
       </div>

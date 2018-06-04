@@ -29,6 +29,16 @@ nav > .dropdown > .dropdown-menu {
   width: 120px;
 }
 
+.right {
+  position: absolute;
+  right: 10px;
+}
+
+.flag {
+  width: 20px;
+  margin-right: 10px;
+}
+
 .btn.focus, .btn:focus {
   box-shadow: 0 0 0 0.2rem rgba(255,255,255,.25) !important;
 }

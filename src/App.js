@@ -17,8 +17,14 @@ class App extends Component {
     super();
 
     const supportLanguages =  {
-      'ko': '한국어',
-      'en': 'English'
+      'ko': {
+        label: '한국어',
+        flag: 'assets/img/flag/south-korea.png'
+      },
+      'en': {
+        label: 'English',
+        flag: 'assets/img/flag/united-states.png'
+      }
     };
     const selectedLanguage = 'ko';
 

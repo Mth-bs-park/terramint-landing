@@ -6,6 +6,7 @@ class Navigation extends Component {
 
     const props = this.props;
     const {selectedLanguage, supportLanguages, changeLanguage} = props;
+    const currentLanguage = supportLanguages[selectedLanguage];
 
 
     return (
@@ -13,21 +14,30 @@ class Navigation extends Component {
         <a className="navbar-brand" href="/">
           <img className="brand-img" src='./assets/img/logo.png' alt="logo"/>
         </a>
+        <div className="right">
+          <div className="dropdown">
+            <a className="btn btn-clear dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img className="flag" src={currentLanguage.flag} />
+              {currentLanguage.label}
+            </a>
+            <div className="dropdown-menu" aria-labelledby="dropdownMenuLink" onClick={changeLanguage}>
+            {
+              Object.keys(supportLanguages).map((v, i)=> {
+                const obj = supportLanguages[v];
+                const {label, flag} = obj;
 
-        <div className="dropdown">
-          <a className="btn btn-clear dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {supportLanguages[selectedLanguage]}
-          </a>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuLink" onClick={changeLanguage}>
-          {
-            Object.keys(supportLanguages).map((v, i)=> {
-              const label = supportLanguages[v];
-              return (<a className="dropdown-item" href="#"
-                    key={i} data-value={v}>{label}</a>);
-            })
-          }
+                return (
+                  <a className="dropdown-item" key={i} data-value={v}>
+                    <img className="flag" src={flag} />
+                    {label}
+                </a>);
+              })
+            }
+            </div>
           </div>
         </div>
+
+
       </nav>
     );
   }

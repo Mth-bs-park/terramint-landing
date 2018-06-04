@@ -1,9 +1,14 @@
 .personal-wrap {
-  background: #ede7f6;
+  background: #f8f8f8;
   padding: 50px 0 40px 0;
 }
 
-.personal-wrap > .content-wrap {
+.personal {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.personal-wrap .content-wrap {
   margin-top: 50px;
 }
 
@@ -27,6 +32,7 @@
 .personal-wrap .card-list {
   display: flex;
   justify-content: center;
+  padding: 0 2em 0 2em;
 }
 
 .personal-wrap .btn-wrap {

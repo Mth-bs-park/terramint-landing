@@ -13,22 +13,24 @@ class Personal extends Component {
     const onClick = props.click;
 
     return (
-      <div className='personal-wrap' id="personal">
-        <div className='title-wrap'>
-          <h3 className='title'>{title}</h3>
-        </div>
-        <div className='content-wrap'>
-          <div className='card-list row m-auto'>
-            {
-              items.map((v, i) => {
-                const {title, content, img} = v;
-                return (<Card key={i} img={img} title={title} content={content}/>);
-              })
-            }
+      <div className="personal-wrap">
+        <div className="personal">
+          <div className='title-wrap'>
+            <h3 className='title'>{title}</h3>
           </div>
-        </div>
-        <div className='btn-wrap'>
-          <button className='btn clear purple' onClick={onClick}>{btnText}</button>
+          <div className='content-wrap'>
+            <div className='card-list row m-auto'>
+              {
+                items.map((v, i) => {
+                  const {title, content, img} = v;
+                  return (<Card key={i} img={img} title={title} content={content}/>);
+                })
+              }
+            </div>
+          </div>
+          <div className='btn-wrap'>
+            <button className='btn clear purple' onClick={onClick}>{btnText}</button>
+          </div>
         </div>
       </div>
     )
